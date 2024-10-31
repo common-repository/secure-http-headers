@@ -1,0 +1,293 @@
+.sec_div{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+.sec_custom_checkbox_label {
+    color: #000000;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 35px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 15px;
+}
+
+    .sec_custom_checkbox_label .sec_custom_checkbox_input {
+        position: absolute;
+        opacity: 0 !important;
+        cursor: pointer;
+    }
+
+.sec_custom_checkbox_check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border: 1px solid #ced4da;
+}
+.sec_checkbox {
+    margin-bottom: 10px;
+}
+.sec_custom_checkbox_label .sec_custom_checkbox_input:checked ~ .sec_custom_checkbox_check {
+    border: 1px solid #1d2327;
+}
+.sec_custom_checkbox_input_permission[disabled] + .sec_custom_checkbox_check {
+    opacity: 0.3;
+}
+.sec_custom_checkbox_input_permission[disabled] + .sec_custom_checkbox_check:hover {
+cursor: not-allowed;
+}
+.sec_custom_checkbox_check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sec_custom_checkbox_label .sec_custom_checkbox_input:checked ~ .sec_custom_checkbox_check:after {
+    display: block;
+}
+
+.sec_custom_checkbox_label .sec_custom_checkbox_check:after {
+    left: 10px;
+    top: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid #1d2327;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+h5.m_sec_subtitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+	margin-top: 5px;
+}
+.sec_button-primary {
+    background: #2271b1;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 3px;
+    border: 1px solid #2271b1;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+	cursor:pointer;
+}
+.sec_button-primary:hover{background: #135e96;
+    cursor:pointer;
+	border-color: #135e96;
+    color: #fff;}	
+button:focus{outline: none !important;}	
+h5.m_sec_title {
+    font-size: 25px;
+    margin-bottom: 0px;
+	display: block;
+	padding-left: 15px;
+}
+
+label.sec_custom_checkbox_label {
+    vertical-align: top;
+    padding-top: 5px;
+}
+button.m_sec_link {
+    color: #2271b1;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    margin: 0;
+    padding: 0px;
+    text-decoration: underline;
+    text-shadow: none;
+    padding-right: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button.m_sec_link:hover {
+    color: #174c77;
+   
+}
+h5.m_sec_subtitle {
+    margin-top: 7px;
+margin-bottom: 10px;
+}
+.m_sec_header {
+    margin-bottom: 10px;
+}
+.m_sec_permissions_div {
+    padding-left: 30px;
+}
+@media (min-width: 991px){
+.m_sec_col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.m_sec_col-md-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+.m_sec_col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.m_sec_col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+}
+.m_sec_col-md-6, .m_sec_col-md-4, .m_sec_col-md-7, .m_sec_col-md-1 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.m_sec_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+p.m_sec_error_permission {
+    color: red;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0px;
+    line-height: initial;
+    margin-bottom: 10px;
+	display: none;
+}
+form#m_sec_form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+form#m_sec_form_server, #m_sec_form_confirm, .m_sec_header_padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.m_sec_permissions_div .sec_checkbox {
+    margin-bottom: 3px;
+}
+.sec_custom_checkbox_input_permission[disabled] + .sec_custom_checkbox_check {
+    opacity: 0.3;
+}
+.sec_custom_checkbox_input_permission[disabled] + .sec_custom_checkbox_check:hover {
+cursor: not-allowed;
+}
+.sec_radio {
+    display: inline-block;
+    padding-right: 20px;
+}
+html[dir="rtl"] .sec_radio {
+    display: inline-block;
+    padding-right: 0px;
+}
+
+
+.sec_radio span.sec_custom_checkbox_check {
+    border-radius: 100%;
+}
+.sec_radio .sec_custom_checkbox_label .sec_custom_checkbox_check:after {
+    border: none;
+    height: 12px;
+    width: 12px;
+    background-color: #1d2327;
+    left: 5px;
+    border-radius: 100%;
+    top: 5px;
+}
+code {
+    font-family: Consolas,"courier new";
+    color: black !important;
+    background-color: white;
+    padding: 2px;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    white-space: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+p.m_sec_config_file_error {
+    color: red !important;
+    font-style: italic !important;
+    margin: 0px !important;
+    margin-top: 3px !important;
+    font-size: 15px !important;
+	display: none;
+}
+.m_sec_clipboard_note, .m_sec_clipboard_note2{
+	display: none;
+	margin: 0px !important;
+    margin-top: 3px !important;
+    font-size: 17px !important;
+}
+.m_sec_justify-center {
+    justify-content: center;
+    align-self: center;
+}
+p.m_sec_or_note {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+html[dir="rtl"] label.sec_custom_checkbox_label {
+    padding-right: 35px;
+}
+html[dir="rtl"] span.sec_custom_checkbox_check {
+    left: auto;
+    right: 0;
+}
+html[dir="rtl"] .m_sec_permissions_div {
+    padding-right: 30px;
+}
+h5.m_sec_subtitle2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    border: 1px solid red;
+    padding: 6px;
+    border-left: 5px solid red;
+}
+html[dir="rtl"] h5.m_sec_subtitle2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    
+    padding: 6px;
+	border-left: none;
+	border: 1px solid red;
+    border-right: 5px solid red;
+}
